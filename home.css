@@ -1,0 +1,253 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat ;
+  background-attachment: fixed;
+}
+
+.img-resize {
+  width: 12rem;
+}
+
+.navbar{
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  position: sticky;
+  border-radius:20px;
+}
+.navbar-container{
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  height: 100%;
+  color: white;
+}
+
+.logo-container{
+  flex: 1;
+  position:transparent;
+}
+.logo{
+  align-self: baseline;
+  flex:1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    color:white;
+    position: relative;
+
+}
+
+.menu-container{
+  flex: 70%;
+}
+.menu-list{
+  display: flex;
+  list-style:none; 
+  margin: 20px;
+  justify-content: center;
+}
+.menu-list-item{
+  margin:20px;
+  list-style: none;
+  font-size: 1.3rem;
+}
+.menu-list-item a{
+  color: white;
+  display: block;
+  padding: 3px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.menu-list-item a:hover{
+  color: black;
+  background-color: rgb(121, 15, 15);
+
+}
+
+.profile-container{
+  flex: 2;
+  display: flex;
+  align-items: right;
+  justify-content: flex-end;
+}
+.profile-text-container{
+  margin: 0 25px;
+}
+
+.profile-pic{
+  width:32px;
+  height:32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.nav-img {
+  width: 3rem;
+  align-content:space-between;
+}
+
+footer{
+   
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #151515;
+  height: auto;
+  width: auto;
+  font-family: "Open Sans";
+  padding-top: 30px;
+  color: #fff;
+}
+.footer-content{
+  font-family:monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  color: aqua;
+}
+
+.footer-bottom{
+  background: #000;
+  width: auto;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+
+.custom-bg {
+  background: #2b2d42;
+  color: #e6e6e9;
+  align-content: center;
+}
+
+.pagination{
+  display:flex;
+  margin:10px 30px;
+  align-items: center;
+  justify-content: center;
+  color:red;
+}
+
+.page{
+  padding:20px;
+  cursor:pointer;
+  color: red;
+}
+
+.current{
+  padding: 10px 20px;
+  border-radius: 50%;
+  border: 5px solid orange;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/*
+This part of the stylesheet is to organise the website and make it look clean by
+ordering the images with the grid function.
+*/
+.frame{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 50px;
+  grid-column-gap: 50px;
+  justify-content: space-around;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.frame img{
+  display: grid;
+  object-fit: contain;
+  width: auto;
+  height: 400px;
+  margin: 0;
+  box-shadow: 0px 0px 15px 10px black;
+}
+
+.con{
+  position: relative;
+  width: auto;
+  height: 400px;
+}
+
+/*
+This part of the stylesheet is to add the function when you hover over an image
+it will lower the opacity of the image to 0.3 and at the same time display the
+name of the content.
+*/
+
+.overlay{
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+}
+
+.img{
+  opacity: 1;
+}
+
+.text{
+  color:white;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.con:hover .overlay{
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.con:hover .img{
+  opacity: 0.3;
+  transition: 0.5s ease-in-out;
+}
+
