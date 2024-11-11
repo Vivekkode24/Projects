@@ -1,4 +1,4 @@
-This code handles real-time data collection, UI updates, sensor integration, and data storage with proper permission checks and theme adjustments.
+// This code handles real-time data collection, UI updates, sensor integration, and data storage with proper permission checks and theme adjustments.
 
 
 // imports
