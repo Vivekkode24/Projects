@@ -1,0 +1,123 @@
+Responsive UI with two card containers, each with distinct sections that demonstrate layout flexibility. 
+
+import 'package:flutter/material.dart';
+
+class ResponsiveCards extends StatelessWidget {
+  const ResponsiveCards({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Directionality(
+      textDirection: TextDirection.ltr,
+      child: Scaffold(
+        backgroundColor: Color(0xFF212239),
+        body: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 60.0, horizontal: 50.0),
+          child: Column(
+            children: [
+              Expanded(
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20.0),
+                    color: Colors.redAccent,
+                  ),
+                  padding: EdgeInsets.all(20.0),
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        top: 0,
+                        left: 0,
+                        width: 400,
+                        height: 100,
+                        child: Container(
+                          color: Colors.grey,
+                          child: Center(
+                            child: Text(
+                              'I cannot grow :( ',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        top: 110,
+                        left: 0,
+                        right: 0,
+                        height: 120,
+                        child: Container(
+                          color: Colors.green,
+                          child: Center(
+                            child: Text(
+                              'I can grow :)',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              SizedBox(height: 20.0),
+              Expanded(
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20.0),
+                    color: Colors.redAccent,
+                  ),
+                  padding: EdgeInsets.all(20.0),
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        top: 0,
+                        left: 0,
+                        width: 400,
+                        height: 100,
+                        child: Container(
+                          color: Colors.grey,
+                          child: Center(
+                            child: Text(
+                              'I cannot grow :( ',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        top: 110,
+                        left: 0,
+                        right: 0,
+                        height: 120,
+                        child: Container(
+                          color: Colors.green,
+                          child: Center(
+                            child: Text(
+                              'I can grow :)',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
