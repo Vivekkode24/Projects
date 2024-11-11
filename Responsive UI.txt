@@ -1,4 +1,4 @@
-Responsive UI with two card containers, each with distinct sections that demonstrate layout flexibility. 
+// Responsive UI with two card containers, each with distinct sections that demonstrate layout flexibility. 
 
 import 'package:flutter/material.dart';
 
