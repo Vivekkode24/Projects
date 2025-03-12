@@ -1,8 +1,8 @@
 # Projects
 
-NM-COMMITTEES Flutter draft - This is the android app (Flutter) that I showed you during the interview.
+NM-COMMITTEES - This application is built using Java with the help of Android Studio as the platform is an application wherein the students of NMCCE have every detail of the college committees present in the college along with the upcoming college events and can also apply for the committees’ membership, all in one application rather than having different links for different committees and their information.
 
-NM-COMMITTEES - This is the android app (Java) that I showed you during the interview.
+NM-COMMITTEES Flutter draft - This is the Flutter version of NM-COMMITTEES.
 
 Python Data Analysis Project - This project includes tasks such as data cleaning, data restructuring, data aggregation adn summarization, exploratory data analysis, and data visualization.
 
