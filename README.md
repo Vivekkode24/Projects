@@ -8,8 +8,6 @@ Python Data Analysis Project - This project includes tasks such as data cleaning
 
 React Native Quiz App - A quiz app developed using React Native.
 
-Dashboards - Vivek.pdf - Some of the dashboards that I’ve worked on for clients. Due to confidentiality, I’ve only included the versions that are shareable and do not contain any sensitive information.
-
 Data Collector - MainActivity.java - This code handles real-time data collection, UI updates, sensor integration, and data storage with proper permission checks and theme adjustments.
 
 Responsive UI.txt - Responsive UI with two flutter card containers, each with distinct sections that demonstrate layout flexibility.
