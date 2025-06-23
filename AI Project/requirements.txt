@@ -1,0 +1,9 @@
+python-dotenv
+streamlit
+praw
+vaderSentiment
+beautifulsoup4
+requests
+nltk
+pandas
+matplotlib
