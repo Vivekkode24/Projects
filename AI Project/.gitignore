@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+
+# Environment
+.env
+
+# Jupyter Notebooks
+*.ipynb_checkpoints
+
+# Streamlit cache
+.streamlit/
+.cache/
+
+# VSCode
+.vscode/
+
+# Mac
+.DS_Store
